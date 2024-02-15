@@ -1,0 +1,40 @@
+.About{
+    display: flex;
+    height: 120vh;
+    width: 100vw;
+    background-color: #210002;
+    z-index: -1;
+}
+#jungle3{
+    z-index: 1;
+}
+.About h1{
+    color: antiquewhite;
+}
+
+.About .left_content{
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50vw;
+    z-index: 2;
+}
+.About .left_content h2{
+    font-size: 5vh;
+    margin: 15px 15px 15px 0px;
+    color:  #ffc71b ;
+    
+    
+}
+.About .left_content p{
+    width: 40vw;
+    height: 50vh;
+    font-size: medium;
+    padding-right:3px;
+    color: #fff;
+}
+.About .right_content{
+    width: 35vw;
+}

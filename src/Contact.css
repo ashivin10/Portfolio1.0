@@ -1,0 +1,245 @@
+.Contact{
+    display: flex;
+    width: 100vw;
+    height: 102vh;
+    background-color: #5a1715;
+    color: #fff;
+
+}
+
+.textzone{
+    margin-left: 80px;
+    margin-top: 100px;
+    width: 60vw;
+    height: 100vh;
+    z-index: 2;
+
+}
+.textzone h2{
+    font-size: 5vh;
+    color: #ffc71b;
+}
+.textzone p{
+    width: 50vw;
+    font-size: medium;
+}
+.contact_form{
+   
+    width: 100%;
+    margin-top: 20px;
+    z-index: 100;
+
+}
+.contact_form .contact-inp{
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+
+}
+.contact_form .contact-inp li
+{
+    display: flex;
+    justify-content: space-between  ;
+    position: relative;
+    /* animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+    clear: both; */
+    overflow-x: hidden;
+}
+.contact_form .contact-inp li .fade{
+    opacity: 0.3;
+}
+li.half{
+    display: flex;
+
+}
+li.half input{
+    width: 23.4vw;
+
+}
+/* name text */
+.line-name{
+    position: absolute;
+    width:  24.7vw   ;
+    height:11vh;
+    pointer-events: none;
+}
+.line-name::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #ffc71b;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+input:focus + .line-name::after,
+input:valid + .line-name::after
+{
+transform: translateX(0%);
+
+}
+
+/* email text */
+.line-email{
+    position: absolute;
+    width:  24.7vw   ;
+    height:11vh;
+    pointer-events: none;
+}
+.line-email::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #ffc71b;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+
+input:focus + .line-email::after,
+input:valid + .line-email::after
+{
+transform: translateX(102%);
+
+}
+
+input{
+    height: 8vh;
+    margin-bottom: 1vh;
+    padding: 10px;
+    border: none;
+    transition: all ease-in 0.5s;
+
+}
+input:focus {
+    outline: none;
+}
+
+.subject{
+    width: 100%;
+}
+.line-sub{
+    position: absolute;
+    width: 50vw;
+    height:11vh;
+    pointer-events: none;
+}
+.line-sub::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #ffc71b;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+input:focus + .line-sub::after,
+input:valid + .line-sub::after
+{
+transform: translateX(0%);
+
+}
+textarea{
+    padding: 10px;
+    width: 100%;
+    height: 18vh;
+}
+textarea:focus{
+    outline: none;
+}
+.line{
+    position: absolute;
+    width: 50vw;
+    height: 21vh;
+    pointer-events: none;
+}
+.line::after{
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 3px solid #ffc71b;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+}
+textarea:focus + .line::after,
+textarea:valid + .line::after
+{
+transform: translateX(0%);
+
+}
+.btn_class{
+display: flex;
+justify-content: space-between;
+width: 50vw;
+position: absolute;
+overflow: hidden;
+}
+.btn {
+    position: relative;
+    margin-top:2vh ;
+    padding-top: 1.6vh;
+    width: 16vw;
+    height: 5vh;
+    float: right;
+    cursor: pointer;
+    border: 1px solid  #ffc71b;
+    text-decoration: none;
+    text-align: center;
+    background:none;
+    z-index:2;
+    color: #ffc71b;
+    overflow: hidden;
+}
+.btn::before{
+    background-color: #ffc71b;
+    content: '';
+    position: absolute;
+    height: 180%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%,-110%) rotate(315deg);
+    z-index: -1; 
+    transition: all 0.5s ease;  
+}
+.btn:hover{
+    color: #fff;
+}
+.btn:hover:before{
+    height: 500%;
+    transform: translate(-50%,-50%)rotate(315deg);      
+}
+
+/* social icons */
+.social-icons{
+    width: 12vw;
+    display: flex;
+    margin-top:2vh;
+    justify-content: space-between;
+}
+.social-icons li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    width: 10vh;
+    padding: 2vh;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.social-icons li:hover{
+  color: #ffc71b;
+}
+
+
